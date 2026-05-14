@@ -1,6 +1,3 @@
-# app/page.tsx
-
-```tsx
 /* =========================================================
    EASY EDIT GUIDE
 
@@ -448,14 +445,7 @@ export default function Home() {
       <FloatingCTA />
     </main>
   )
-}
-```
 
----
-
-# app/globals.css (ganz unten hinzufügen)
-
-```css
 @keyframes scroll {
   from {
     transform: translateX(0);
@@ -464,40 +454,3 @@ export default function Home() {
     transform: translateX(-50%);
   }
 }
-```
-
----
-
-# Benötigte Ordnerstruktur
-
-```text
-public/
-  gallery/
-    gallery.1.jpeg
-    gallery.2.jpeg
-    gallery.3.jpeg
-    gallery.4.jpeg
-    gallery.5.jpeg
-    gallery.6.jpeg
-  clients/
-    client1.png
-    client2.png
-    client3.png
-    client4.png
-    client5.png
-    client6.png
-  logo/
-    ne2.png
-  videos/
-    video.1.mp4
-```
-
----
-
-# Deployment
-
-```bash
-git add .
-git commit -m "Add clients and Instagram feed"
-git push
-```
