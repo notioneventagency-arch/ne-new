@@ -24,7 +24,16 @@
 ========================================================= */
 
 import Image from 'next/image'
-import { Instagram, Music2, CalendarDays, ArrowRight, Play, Mail, MapPin } from 'lucide-react'
+import { 
+  Instagram, 
+  Music2, 
+  CalendarDays, 
+  ArrowRight, 
+  Play, 
+  Mail, 
+  MapPin,
+  Phone
+} from 'lucide-react'
 import FloatingCTA from "@/components/floating-cta"
 
 // =========================
@@ -32,10 +41,10 @@ import FloatingCTA from "@/components/floating-cta"
 // Change images here
 // =========================
 const works = [
-  '/public/gallery.1.jpeg',
-  '/public/gallery.2.jpeg',
-  '/public/gallery.3.jpeg',
-  '/public/gallery.3.jpeg',
+  '/gallery.1.jpeg',
+  '/gallery.2.jpeg',
+  '/gallery.3.jpeg',
+  '/gallery.3.jpeg',
 ]
 
 export default function Home() {
