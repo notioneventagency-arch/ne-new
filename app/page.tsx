@@ -41,10 +41,12 @@ import FloatingCTA from "@/components/floating-cta"
 // Change images here
 // =========================
 const works = [
-  '/gallery.1.jpeg',
-  '/gallery.2.jpeg',
-  '/gallery.3.jpeg',
-  '/gallery.3.jpeg',
+  '/gallery/gallery.1.jpeg',
+  '/gallery/gallery.2.jpeg',
+  '/gallery/gallery.3.jpeg',
+  '/gallery/gallery.4.jpeg',
+  '/gallery/gallery.5.jpeg',
+  '/gallery/gallery.6.jpeg',
 ]
 
 export default function Home() {
@@ -105,13 +107,23 @@ export default function Home() {
           </p>
 
           <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
-            <button className="group rounded-full border border-white bg-white px-8 py-4 font-semibold text-black transition hover:scale-105 hover:bg-zinc-200">
-              View Projects
+            <a
+  href="#work"
+  className="group rounded-full border border-white bg-white px-8 py-4 font-semibold text-black transition hover:scale-105 hover:bg-zinc-200"
+>
+  View Projects
+  <ArrowRight className="ml-2 inline-block h-4 w-4 transition group-hover:translate-x-1" />
+</a>
               <ArrowRight className="ml-2 inline-block h-4 w-4 transition group-hover:translate-x-1" />
             </button>
 
-            <button className="rounded-full border border-white/20 bg-white/5 px-8 py-4 font-semibold backdrop-blur-xl transition hover:border-white hover:bg-white/10">
-              <Play className="mr-2 inline-block h-4 w-4" /> Showreel
+            <a
+  href="/videos/video.1.mp4"
+  target="_blank"
+  className="rounded-full border border-white/20 bg-white/5 px-8 py-4 font-semibold backdrop-blur-xl transition hover:border-white hover:bg-white/10"
+>
+  <Play className="mr-2 inline-block h-4 w-4" /> Showreel
+</a>
             </button>
           </div>
 
