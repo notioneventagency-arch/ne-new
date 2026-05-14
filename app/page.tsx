@@ -58,7 +58,14 @@ export default function Home() {
       <header className="fixed top-0 z-50 w-full border-b border-white/10 bg-black/60 backdrop-blur-2xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
           <div className="flex items-center gap-3">
-            <Image src="/ne2.png" alt="logo" width={42} height={42} className="rounded-full" />
+            <Image
+  src="/logo/ne2.png"
+  alt="Notion Event Agency Logo"
+  width={42}
+  height={42}
+  className="rounded-full object-cover"
+  priority
+/>
             <div>
               <p className="text-xs uppercase tracking-[0.3em] text-zinc-500">Creative Studio</p>
               <h1 className="font-semibold">Notion Agency</h1>
