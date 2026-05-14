@@ -1,5 +1,5 @@
 import './globals.css'
-import { Providers } from './providers'
+import { ThemeProvider } from 'next-themes'
 
 export const metadata = {
   title: 'Notion Agency',
@@ -14,7 +14,13 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body>
-        <Providers>{children}</Providers>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem={false}
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   )
