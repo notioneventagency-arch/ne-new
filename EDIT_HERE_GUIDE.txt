@@ -1,0 +1,73 @@
+
+===============================
+NOTION AGENCY EASY EDIT GUIDE
+===============================
+
+INSTAGRAM:
+app/page.tsx
+
+Search:
+instagram.com
+
+--------------------------------
+
+WHATSAPP:
+components/floating-cta.tsx
+
+Search:
+wa.me
+
+--------------------------------
+
+GALLERY IMAGES:
+public/gallery.1.jpeg
+public/gallery.2.jpeg
+public/gallery.3.jpeg
+
+Replace images with SAME filenames.
+
+--------------------------------
+
+VIDEOS:
+public/videos/video.1.mp4
+
+Replace with same filename.
+
+--------------------------------
+
+BUTTONS:
+app/page.tsx
+
+Search:
+View Projects
+Showreel
+
+--------------------------------
+
+MAIN DESIGN:
+app/page.tsx
+
+--------------------------------
+
+GLOBAL STYLES:
+app/globals.css
+
+--------------------------------
+
+SAFE CLEANUP DONE:
+- removed unused components
+- removed unused ui files
+- kept original design
+- easier edit structure
+- added helper comments
+
+--------------------------------
+
+DEPLOY:
+1. Upload to GitHub
+2. Import in Vercel
+3. Deploy
+
+Run local:
+npm install
+npm run dev
