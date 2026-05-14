@@ -2,10 +2,10 @@
    EASY EDIT GUIDE
 
    INSTAGRAM LINK:
-   https://www.instagram.com/notion_eventagency/
+   search for: instagram.com
 
    WHATSAPP LINK:
-   https://wa.me/436641259454
+   search for: wa.me
 
    GALLERY IMAGES:
    public/gallery/gallery.1.jpeg
@@ -15,19 +15,12 @@
    public/gallery/gallery.5.jpeg
    public/gallery/gallery.6.jpeg
 
-   CLIENT LOGOS:
-   public/clients/client1.png
-   public/clients/client2.png
-   public/clients/client3.png
-   public/clients/client4.png
-   public/clients/client5.png
-   public/clients/client6.png
-
    LOGO:
    public/logo/ne2.png
 
    VIDEO:
    public/videos/video.1.mp4
+
 ========================================================= */
 
 import Image from 'next/image'
@@ -43,6 +36,9 @@ import {
 } from 'lucide-react'
 import FloatingCTA from '@/components/floating-cta'
 
+// =========================
+// GALLERY IMAGES
+// =========================
 const works = [
   '/gallery/gallery.1.jpeg',
   '/gallery/gallery.2.jpeg',
@@ -50,15 +46,6 @@ const works = [
   '/gallery/gallery.4.jpeg',
   '/gallery/gallery.5.jpeg',
   '/gallery/gallery.6.jpeg',
-]
-
-const clients = [
-  '/clients/client1.png',
-  '/clients/client2.png',
-  '/clients/client3.png',
-  '/clients/client4.png',
-  '/clients/client5.png',
-  '/clients/client6.png',
 ]
 
 export default function Home() {
@@ -73,7 +60,7 @@ export default function Home() {
       {/* Header */}
       <header className="fixed top-0 z-50 w-full border-b border-white/10 bg-black/60 backdrop-blur-2xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
-          <a href="#top" className="flex items-center gap-3">
+          <div className="flex items-center gap-3">
             <Image
               src="/logo/ne2.png"
               alt="Notion Event Agency Logo"
@@ -89,24 +76,27 @@ export default function Home() {
               </p>
               <h1 className="font-semibold">Notion Agency</h1>
             </div>
-          </a>
+          </div>
 
           <nav className="hidden gap-8 text-sm text-zinc-300 md:flex">
-            <a href="#services" className="transition hover:text-white">Services</a>
-            <a href="#work" className="transition hover:text-white">Work</a>
-            <a href="#clients" className="transition hover:text-white">Clients</a>
-            <a href="#instagram" className="transition hover:text-white">Instagram</a>
-            <a href="#events" className="transition hover:text-white">Events</a>
-            <a href="#contact" className="transition hover:text-white">Contact</a>
+            <a href="#services" className="transition hover:text-white">
+              Services
+            </a>
+            <a href="#work" className="transition hover:text-white">
+              Work
+            </a>
+            <a href="#events" className="transition hover:text-white">
+              Events
+            </a>
+            <a href="#contact" className="transition hover:text-white">
+              Contact
+            </a>
           </nav>
         </div>
       </header>
 
       {/* Hero */}
-      <section
-        id="top"
-        className="relative flex min-h-screen items-center justify-center px-6 pt-32 text-center"
-      >
+      <section className="relative flex min-h-screen items-center justify-center px-6 pt-32 text-center">
         <div className="absolute inset-0 opacity-20">
           <video
             autoPlay
@@ -251,59 +241,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Clients */}
-      <section id="clients" className="px-6 py-24">
-        <div className="mx-auto max-w-7xl overflow-hidden">
-          <div className="mb-16 text-center">
-            <p className="text-sm uppercase tracking-[0.3em] text-zinc-500">
-              Trusted By
-            </p>
-            <h2 className="mt-4 text-3xl font-black sm:text-4xl md:text-5xl">
-              Our Clients
-            </h2>
-          </div>
-
-          <div className="flex w-max animate-[scroll_30s_linear_infinite] gap-12">
-            {[...clients, ...clients].map((logo, index) => (
-              <div
-                key={index}
-                className="flex h-24 w-48 items-center justify-center rounded-3xl border border-white/10 bg-white/5 p-6"
-              >
-                <Image
-                  src={logo}
-                  alt={`Client ${index + 1}`}
-                  width={160}
-                  height={80}
-                  className="max-h-12 w-auto object-contain opacity-80"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Instagram Feed */}
-      <section id="instagram" className="px-6 py-24">
-        <div className="mx-auto max-w-7xl">
-          <div className="mb-16 text-center">
-            <p className="text-sm uppercase tracking-[0.3em] text-zinc-500">
-              Social Media
-            </p>
-            <h2 className="mt-4 text-3xl font-black sm:text-4xl md:text-5xl">
-              Live Instagram Feed
-            </h2>
-          </div>
-
-          <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 p-4 backdrop-blur-xl">
-            <iframe
-              src="https://789976ff55304cb3984946f91817537a.elf.site"
-              className="h-[900px] w-full rounded-2xl"
-              loading="lazy"
-            />
-          </div>
-        </div>
-      </section>
-
       {/* Events */}
       <section id="events" className="mx-auto max-w-6xl px-6 py-24">
         <div className="rounded-[3rem] border border-white/10 bg-white/5 p-10 backdrop-blur-2xl">
@@ -370,7 +307,10 @@ export default function Home() {
             <div className="space-y-5">
               <div className="flex items-center gap-4 text-zinc-300">
                 <Mail className="h-5 w-5" />
-                <a href="mailto:notioneventagency@gmail.com" className="hover:text-white">
+                <a
+                  href="mailto:notioneventagency@gmail.com"
+                  className="hover:text-white"
+                >
                   notioneventagency@gmail.com
                 </a>
               </div>
@@ -405,8 +345,6 @@ export default function Home() {
               method="POST"
               className="space-y-4"
             >
-              <input type="hidden" name="_captcha" value="false" />
-
               <input
                 type="text"
                 name="name"
@@ -445,12 +383,4 @@ export default function Home() {
       <FloatingCTA />
     </main>
   )
-
-@keyframes scroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
 }
