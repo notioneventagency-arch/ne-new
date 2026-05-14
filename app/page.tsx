@@ -235,10 +235,18 @@ export default function Home() {
 
           <div className="mt-14 grid gap-10 md:grid-cols-2">
             <div className="space-y-5">
-              <div className="flex items-center gap-4 text-zinc-300"><Mail /> notioneventagency@gmail.com</div>
-              <div className="flex items-center gap-4 text-zinc-300"><Instagram /> @notion-qeventagency</div>
+              <div className="flex items-center gap-4 text-zinc-300"><Mail />
+<a href="mailto:notioneventagency@gmail.com">
+  notioneventagency@gmail.com</div>
+              <div className="flex items-center gap-4 text-zinc-300"><Instagram />
+<a
+  href="https://www.instagram.com/notion_eventagency/"
+  target="_blank"
+>
+  @notion_eventagency</div>
               <div className="flex items-center gap-4 text-zinc-300"><MapPin /> Kalsdorf bei Graz, Austria</div>
-                <div className="flex items-center gap-4 text-zinc-300"><Phone /> +436641259454, Austria</div>
+                <div className="flex items-center gap-4 text-zinc-300"><Phone />
+<a href="tel:+436641259454">+43 664 1259454</div>
             </div>
 
             <form className="space-y-4">
