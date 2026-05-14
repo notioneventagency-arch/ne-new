@@ -152,7 +152,7 @@ export default function Home() {
 
           <div className="mt-20 grid grid-cols-2 gap-6 md:grid-cols-4">
             {[
-              ['500+', 'Events'],
+              ['50+', 'Events'],
               ['5K+', 'Reach'],
               ['20+', 'Clients'],
               ['24/7', 'Creative Energy'],
