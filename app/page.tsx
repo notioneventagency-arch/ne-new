@@ -26,13 +26,16 @@
 import Image from 'next/image'
 import {
   Instagram,
-  Music2,
   CalendarDays,
   ArrowRight,
   Play,
   Mail,
   MapPin,
   Phone,
+  Music2,
+  Video,
+  Palette,
+  Smartphone,
 } from 'lucide-react'
 import FloatingCTA from '@/components/floating-cta'
 
