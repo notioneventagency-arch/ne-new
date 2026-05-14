@@ -74,7 +74,7 @@ export default function Home() {
               <p className="text-xs uppercase tracking-[0.3em] text-zinc-500">
                 Creative Studio
               </p>
-              <h1 className="font-semibold">Notion Agency</h1>
+              <h1 className="font-semibold">NOTION AGENCY</h1>
             </div>
           </div>
 
@@ -122,7 +122,7 @@ export default function Home() {
           </h1>
 
           <p className="mx-auto mt-8 max-w-2xl text-lg text-zinc-400 md:text-xl">
-            Premium DJ marketing, cinematic event visuals, 3D branding,
+            Premium marketing-agency, DJ & Music, 3D branding, video 
             photography and social media campaigns for nightlife brands and
             modern events.
           </p>
@@ -179,10 +179,10 @@ export default function Home() {
 
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
           {[
-            ['DJ Event Marketing', 'Campaigns, promotion & viral nightlife branding'],
-            ['Video Production', 'Cinematic reels, aftermovies & event visuals'],
-            ['3D Logo Design', 'Luxury visual identity & animated graphics'],
-            ['Social Media', 'Instagram growth & premium content creation'],
+            ['DJ + Event Marketing', 'Campaigns, promotion & viral branding'],
+            ['Video + Photo Production', 'Photos - reels, aftermovies & event visuals'],
+            ['3D Logo Design', 'Luxury visual identity & company graphics'],
+            ['Social Media', 'Instagram & premium content creation'],
           ].map(([title, text]) => (
             <div
               key={title}
@@ -227,7 +227,7 @@ export default function Home() {
                 <div className="flex items-center justify-between p-6">
                   <div>
                     <h3 className="text-2xl font-bold">
-                      Event Visual Experience
+                      Visual Images Of Work
                     </h3>
                     <p className="mt-2 text-zinc-400">
                       Creative Direction / Nightlife / Branding
