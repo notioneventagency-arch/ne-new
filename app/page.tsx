@@ -269,9 +269,9 @@ export default function Home() {
 
           <div className="mt-12 space-y-5">
             {[
-              ['24 MAY', 'Summer Opening', 'Vienna'],
-              ['03 JUN', 'Club Night', 'Berlin'],
-              ['17 JUL', 'Festival Showcase', 'Ibiza'],
+              ['23 MAY', 'DGAEHEA', 'Citypark'],
+              ['30 MAY', 'PADELCLUBBING', 'WILDON'],
+              ['11 JUL', 'ALPENTREFFEN', 'Mariazell'],
             ].map(([date, event, city]) => (
               <div
                 key={event}
