@@ -12,7 +12,7 @@ export default function FloatingCTA() {
     <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
 
       <a
-        href="https://wa.me/436601234567"
+        href="https://wa.me/436641259454"
         target="_blank"
         className="flex items-center gap-2 rounded-full bg-white px-5 py-4 text-black shadow-2xl transition hover:scale-110"
       >
@@ -21,7 +21,7 @@ export default function FloatingCTA() {
       </a>
 
       <a
-        href="https://instagram.com/DEINNAME"
+        href="https://www.instagram.com/notion_eventagency/"
         target="_blank"
         className="flex items-center gap-2 rounded-full border border-white/20 bg-black/70 px-5 py-4 text-white backdrop-blur-xl transition hover:scale-110"
       >
