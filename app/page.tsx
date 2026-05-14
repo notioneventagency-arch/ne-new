@@ -96,7 +96,7 @@ export default function Home() {
             NOW BOOKING 2026 EVENTS
           </div>
 
-          <h1 className="text-6xl font-black uppercase leading-none tracking-tight md:text-8xl lg:text-[10rem]">
+          <h1 className="text-4xl sm:text-6xl md:text-8xl lg:text-[10rem] font-black uppercase leading-none tracking-tight">
             Creative
             <br />
             Experiences
