@@ -1,3 +1,5 @@
+'use client'
+
 /* =========================================================
    EASY EDIT GUIDE
 
@@ -23,9 +25,8 @@
 
 ========================================================= */
 
-'use client'
-
 import Image from 'next/image'
+
 import {
   Instagram,
   Music2,
@@ -42,7 +43,6 @@ import {
 import FloatingCTA from '@/components/floating-cta'
 
 import { useTheme } from 'next-themes'
-import { InstagramEmbed } from 'react-social-media-embed'
 
 // =========================
 // GALLERY IMAGES
@@ -68,6 +68,9 @@ const clients = [
   'Loco',
 ]
 
+// =========================
+// THEME TOGGLE
+// =========================
 function ThemeToggle() {
   const { theme, setTheme } = useTheme()
 
@@ -122,23 +125,38 @@ export default function Home() {
           </div>
 
           <nav className="hidden gap-8 text-sm text-zinc-600 dark:text-zinc-300 md:flex">
-            <a href="#services" className="transition hover:text-black dark:hover:text-white">
+            <a
+              href="#services"
+              className="transition hover:text-black dark:hover:text-white"
+            >
               Services
             </a>
 
-            <a href="#work" className="transition hover:text-black dark:hover:text-white">
+            <a
+              href="#work"
+              className="transition hover:text-black dark:hover:text-white"
+            >
               Work
             </a>
 
-            <a href="#events" className="transition hover:text-black dark:hover:text-white">
+            <a
+              href="#events"
+              className="transition hover:text-black dark:hover:text-white"
+            >
               Events
             </a>
 
-            <a href="#instagram" className="transition hover:text-black dark:hover:text-white">
+            <a
+              href="#instagram"
+              className="transition hover:text-black dark:hover:text-white"
+            >
               Instagram
             </a>
 
-            <a href="#contact" className="transition hover:text-black dark:hover:text-white">
+            <a
+              href="#contact"
+              className="transition hover:text-black dark:hover:text-white"
+            >
               Contact
             </a>
           </nav>
@@ -333,21 +351,36 @@ export default function Home() {
             </h2>
           </div>
 
-          <div className="grid gap-8 md:grid-cols-3">
+          <div className="grid gap-6 md:grid-cols-3">
             {[
-              'https://www.instagram.com/p/XXXXXXXX/',
-              'https://www.instagram.com/p/XXXXXXXX/',
-              'https://www.instagram.com/p/XXXXXXXX/',
-            ].map((url) => (
-              <div
-                key={url}
-                className="overflow-hidden rounded-[2rem]"
+              '/gallery/gallery.1.jpeg',
+              '/gallery/gallery.2.jpeg',
+              '/gallery/gallery.3.jpeg',
+            ].map((image, index) => (
+              <a
+                key={index}
+                href="https://www.instagram.com/notion_eventagency/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group overflow-hidden rounded-[2rem] border border-black/10 bg-black/5 transition hover:scale-[1.02] dark:border-white/10 dark:bg-white/5"
               >
-                <InstagramEmbed
-                  url={url}
-                  width="100%"
-                />
-              </div>
+                <div className="relative">
+                  <Image
+                    src={image}
+                    alt={`Instagram ${index + 1}`}
+                    width={800}
+                    height={800}
+                    className="h-[420px] w-full object-cover transition duration-700 group-hover:scale-110"
+                  />
+
+                  <div className="absolute inset-0 bg-black/20 opacity-0 transition group-hover:opacity-100" />
+
+                  <div className="absolute bottom-5 left-5 flex items-center gap-2 rounded-full bg-black/70 px-4 py-2 text-white backdrop-blur-xl">
+                    <Instagram className="h-4 w-4" />
+                    @notion_eventagency
+                  </div>
+                </div>
+              </a>
             ))}
           </div>
         </div>
