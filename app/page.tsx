@@ -38,6 +38,7 @@ import {
   Smartphone,
 } from 'lucide-react'
 import FloatingCTA from '@/components/floating-cta'
+import Script from 'next/script'
 
 // =========================
 // GALLERY IMAGES
@@ -115,7 +116,7 @@ export default function Home() {
         <div className="relative z-10 max-w-6xl">
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-5 py-2 text-sm backdrop-blur-xl">
             <span className="h-2 w-2 animate-pulse rounded-full bg-white" />
-            NOW BOOKING 2026 EVENTS
+            Marketing • Events • Content • Branding
           </div>
 
        <h1 className="text-4xl font-black uppercase leading-none tracking-tight sm:text-6xl md:text-8xl lg:text-[10rem]">
@@ -316,6 +317,30 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="px-6 py-24">
+  <div className="mx-auto max-w-7xl">
+    <div className="mb-12 text-center">
+      <p className="text-sm uppercase tracking-[0.3em] text-zinc-500">
+        Social Media
+      </p>
+
+      <h2 className="mt-4 text-3xl font-black sm:text-4xl md:text-5xl">
+        Latest On Instagram
+      </h2>
+    </div>
+
+    <Script
+      src="https://static.elfsight.com/platform/platform.js"
+      strategy="lazyOnload"
+    />
+
+    <div
+      className="elfsight-app-789976ff-5530-4cb3-9849-46f91817537a"
+      data-elfsight-app-lazy
+    />
+  </div>
+</section>
+       
       {/* Contact */}
       <section id="contact" className="px-6 py-24">
         <div className="mx-auto max-w-5xl rounded-[3rem] border border-white/10 bg-white/5 p-10 backdrop-blur-2xl">
