@@ -181,23 +181,45 @@ export default function Home() {
         </div>
 
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-          {[
-            ['DJ + Event Marketing', 'Campaigns, promotion & viral branding'],
-            ['Video + Photo Production', 'Photos - reels, aftermovies & event visuals'],
-            ['3D Logo Design', 'Luxury visual identity & company graphics'],
-            ['Social Media', 'Instagram & premium content creation'],
-          ].map(([title, text]) => (
-            <div
-              key={title}
-              className="group rounded-[2rem] border border-white/10 bg-white/5 p-8 transition hover:-translate-y-2 hover:border-white/30 hover:bg-white/10"
-            >
-              <div className="mb-10 flex h-14 w-14 items-center justify-center rounded-2xl border border-white/10 bg-white/10">
-                <Music2 className="h-6 w-6" />
-              </div>
-              <h3 className="text-2xl font-bold">{title}</h3>
-              <p className="mt-4 text-zinc-400">{text}</p>
-            </div>
-          ))}
+         {[
+  {
+    title: 'DJ + Event Marketing',
+    text: 'Campaigns, promotion & viral branding',
+    icon: <Music2 className="h-6 w-6" />,
+  },
+  {
+    title: 'Video + Photo Production',
+    text: 'Photos, reels, aftermovies & event visuals',
+    icon: <Video className="h-6 w-6" />,
+  },
+  {
+    title: '3D Logo Design',
+    text: 'Luxury visual identity & company graphics',
+    icon: <Palette className="h-6 w-6" />,
+  },
+  {
+    title: 'Social Media',
+    text: 'Instagram & premium content creation',
+    icon: <Smartphone className="h-6 w-6" />,
+  },
+].map((service) => (
+  <div
+    key={service.title}
+    className="group rounded-[2rem] border border-white/10 bg-white/5 p-8 transition hover:-translate-y-2 hover:border-white/30 hover:bg-white/10"
+  >
+    <div className="mb-10 flex h-14 w-14 items-center justify-center rounded-2xl border border-white/10 bg-white/10">
+      {service.icon}
+    </div>
+
+    <h3 className="text-2xl font-bold">
+      {service.title}
+    </h3>
+
+    <p className="mt-4 text-zinc-400">
+      {service.text}
+    </p>
+  </div>
+))}
         </div>
       </section>
 
