@@ -381,8 +381,37 @@ export default function Home() {
             </form>
           </div>
         </div>
-      </section>
+     </section>
 
+<footer className="border-t border-white/10 py-8">
+  <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-6 text-sm text-zinc-500 md:flex-row">
+    <p>
+      © {new Date().getFullYear()} Notion Eventagency.
+      Alle Rechte vorbehalten.
+    </p>
+
+    <div className="flex gap-6">
+      <a href="/impressum" className="hover:text-white transition">
+        Impressum
+      </a>
+
+      <a href="/datenschutz" className="hover:text-white transition">
+        Datenschutz
+      </a>
+
+      <a
+        href="https://www.instagram.com/notion_eventagency/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-white transition"
+      >
+        Instagram
+      </a>
+    </div>
+  </div>
+</footer>
 
 <FloatingCTA />
 </main>
+  )
+}
