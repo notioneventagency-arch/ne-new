@@ -118,11 +118,11 @@ export default function Home() {
             NOW BOOKING 2026 EVENTS
           </div>
 
-          <h1 className="text-4xl font-black uppercase leading-none tracking-tight sm:text-6xl md:text-8xl lg:text-[10rem]">
-            Creative
-            <br />
-            Experiences
-          </h1>
+       <h1 className="text-4xl font-black uppercase leading-none tracking-tight sm:text-6xl md:text-8xl lg:text-[10rem]">
+  FROM IDEA
+  <br />
+  TO EXPERIENCE
+</h1>
 
           <p className="mx-auto mt-8 max-w-2xl text-lg text-zinc-400 md:text-xl">
             Premium marketing-agency, DJ & Music, 3D branding, video 
